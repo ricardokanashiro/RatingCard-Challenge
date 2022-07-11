@@ -177,7 +177,7 @@ footer a{
     text-align: center;
 }
 
-@media(max-width: 400px){
+@media(max-width: 500px){
     .stateCard{
         margin: 0 2rem;
     }
