@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+  <div class="statesCardsWrapper">
+
+    <div class="ratingStateCard stateCard">
+
+      <div class="iconWrapper">
+
+        <div class="starIcon">
+          <img src="../images/icon-star.svg" alt="star icon">
+        </div>
+
+      </div>
+
+      <h1 class="mainTitle ratingCardTitle">How did we do?</h1>
+
+      <p class="ratingCardContent cardContent">
+        Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+      </p>
+
+      <div class="ratingArea">
+
+        <div class="ratingButton ratingButton1" data-rate-number="1">1</div>
+
+        <div class="ratingButton ratingButton2" data-rate-number="2">2</div>
+
+        <div class="ratingButton ratingButton3" data-rate-number="3">3</div>
+
+        <div class="ratingButton ratingButton4" data-rate-number="4">4</div>
+
+        <div class="ratingButton ratingButton5" data-rate-number="5">5</div>
+
+      </div>
+
+      <button class="submitButton">SUBMIT</button>
+    </div>
+  
+    <div class="thankYouStateCard stateCard">
+
+      <img class="thankYouIcon" src="../images/illustration-thank-you.svg" alt="a smartphone with a card">
+
+      <p class="ratedTotalMessage">You selected <span class="ratedTotal"></span> out of 5</p>
+  
+      <h1 class="mainTitle">Thank you!</h1>
+  
+      <p class="cardContent thankYouCardContent">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don't hesitate to get in touch!</p>
+    </div>
+
+  </div>
+  
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ricardo Eiichi Kanashiro</a>.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

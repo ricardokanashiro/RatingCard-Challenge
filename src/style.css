@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --mainFont: 'Overpass', sans-serif;
+
+    --orange: hsl(25, 97%, 53%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--mainFont);
+    background-color: var(--veryDarkBlue);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+    color: rgb(233, 233, 233);
+}
+
+footer a{
+    margin-left: .5rem;
+}
+
+.statesCardsWrapper{
+    display: flex;
+    gap: 5rem;
+    flex-direction: row;
+}
+
+.stateCard{
+    background-color: var(--darkBlue);
+    max-width: 40rem;
+    height: 42rem;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.mainTitle{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.8rem;
+}
+
+.cardContent{
+    color: var(--lightGrey);
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+/* Rating Card */
+
+.iconWrapper{
+    width: 100%;
+    height:6.5rem;
+}
+
+.starIcon{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkBlue);
+    filter: brightness(1.2);
+}
+
+.ratingArea{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    margin-top: 2.5rem;
+}
+
+.ratingButton{
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-top: .2rem;
+    width:5rem;
+    height:5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--lightGrey);
+    background-color: var(--darkBlue);
+    filter: brightness(1.2);
+    cursor: pointer;
+    transition-duration: 300ms;
+    transition-property: color, background-color;
+}
+
+.ratingButton:hover{
+    filter: brightness(1);
+    background-color: var(--orange);
+    color: white;
+}
+
+.chosenRating{
+    background-color: var(--mediumGrey);
+    color: white;
+}
+
+.submitButton{
+    width: 100%;
+    height:5rem;
+    margin-top: 4rem;
+    border-radius: 2.4rem;
+    font-family: var(--mainFont);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+    background-color: var(--orange);
+    cursor: pointer;
+    transition-duration: 300ms;
+    transition-property: background-color, color;
+    letter-spacing: .45rem;
+}
+
+.submitButton:hover{
+    background-color: white;
+    color: var(--orange);
+}
+
+/* ThankYou Card */
+
+.thankYouStateCard{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.thankYouIcon{
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+.ratedTotalMessage{
+    color: var(--orange);
+    font-size: 1.3rem;
+    letter-spacing: .15rem;
+    background-color: var(--darkBlue);
+    filter: brightness(1.2);
+    padding: .4rem 1.8rem;
+    border-radius: 1.8rem;
+    margin-bottom: 4rem;
+}
+
+.thankYouCardContent{
+    text-align: center;
+}
+
+@media(max-width: 400px) {
+    .stateCard{
+        margin: 0 2rem;
+    }
+}
