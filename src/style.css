@@ -32,10 +32,11 @@ body{
 footer{
     position: absolute;
     bottom: 0;
-    display: none;
+    display: flex;
     align-items: center;
+    flex-flow: row nowrap;
     font-size: 1.3rem;
-    bottom: .5rem;
+    bottom: 1rem;
     color: rgb(233, 233, 233);
 }
 
@@ -184,5 +185,9 @@ footer a{
     .ratingButton{
         width: 4rem;
         height:4rem;
+    }
+
+    footer {
+        font-size: .8rem;
     }
 }
