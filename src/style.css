@@ -32,10 +32,10 @@ body{
 footer{
     position: absolute;
     bottom: 0;
-    display: flex;
+    display: none;
     align-items: center;
     font-size: 1.3rem;
-    margin-bottom: .5rem;
+    bottom: .5rem;
     color: rgb(233, 233, 233);
 }
 
@@ -52,7 +52,7 @@ footer a{
 .stateCard{
     background-color: var(--darkBlue);
     max-width: 40rem;
-    height: 42rem;
+    max-height: 42rem;
     border-radius: 2rem;
     padding: 3rem;
 }
@@ -174,10 +174,4 @@ footer a{
 
 .thankYouCardContent{
     text-align: center;
-}
-
-@media(max-width: 400px) {
-    .stateCard{
-        margin: 0 2rem;
-    }
 }
